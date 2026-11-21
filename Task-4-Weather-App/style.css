@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; background: #eaf2f8; font-family: Arial, sans-serif; color: #222; }
+.container { width: 100%; max-width: 500px; background: white; padding: 28px; border-radius: 10px; box-shadow: 0 3px 15px #0001; text-align: center; }
+form { display: flex; gap: 8px; margin: 22px 0; }
+input { flex: 1; min-width: 0; padding: 12px; border: 1px solid #bbb; border-radius: 5px; font: inherit; }
+button { padding: 12px 16px; border: 0; border-radius: 5px; background: #176b87; color: white; cursor: pointer; }
+button:hover { background: #104b61; }
+.weather-card { background: #eaf5fb; padding: 20px; border-radius: 8px; animation: show .4s ease; }
+.weather-card h2 { margin-top: 0; }
+.temp { font-size: 38px; font-weight: bold; color: #176b87; }
+.error { color: #c62828; }
+.loading { color: #176b87; }
+#history button { margin: 4px; background: #607d8b; }
+@keyframes show { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 450px) { form { flex-direction: column; } }

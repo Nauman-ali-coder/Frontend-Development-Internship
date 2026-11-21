@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Our Pricing Plans</h1>
+  <p>Choose the plan that is right for you.</p>
+
+  <div class="controls">
+    <button id="monthly">Monthly</button>
+    <button id="yearly">Yearly</button>
+  </div>
+  <div class="controls">
+    <button class="filter active" data-type="all">All</button>
+    <button class="filter" data-type="basic">Basic</button>
+    <button class="filter" data-type="premium">Premium</button>
+  </div>
+
+  <div class="cards">
+    <div class="card" data-category="basic" data-month="5" data-year="50">
+      <h2>Basic</h2><p>Good for beginners</p>
+      <h3>$<span class="price">5</span> <small class="period">/ month</small></h3>
+      <ul><li>1 Project</li><li>Email Support</li><li>Basic Features</li></ul>
+      <button class="choose">Choose Plan</button>
+    </div>
+    <div class="card popular" data-category="premium" data-month="12" data-year="120">
+      <strong class="badge">Most Popular</strong>
+      <h2>Standard</h2><p>For regular users</p>
+      <h3>$<span class="price">12</span> <small class="period">/ month</small></h3>
+      <ul><li>5 Projects</li><li>Priority Support</li><li>Extra Features</li></ul>
+      <button class="choose">Choose Plan</button>
+    </div>
+    <div class="card" data-category="premium" data-month="20" data-year="200">
+      <h2>Premium</h2><p>For professionals</p>
+      <h3>$<span class="price">20</span> <small class="period">/ month</small></h3>
+      <ul><li>Unlimited Projects</li><li>24/7 Support</li><li>All Features</li></ul>
+      <button class="choose">Choose Plan</button>
+    </div>
+  </div>
+  <p id="message"></p>
+  <script src="script.js"></script>
+</body>
+</html>
